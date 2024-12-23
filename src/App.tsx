@@ -11,11 +11,21 @@ const App: React.FC = () => {
       <Header />
       <About />
       <Project />
+      <Divider />
       <Contact />
       <Footer />
 
     </>
   );
 };
+const Divider: React.FC = () => (
+  <div
+    style={{
+      height: '2px',
+      background: 'linear-gradient(to right, #007bff, transparent)',
+      margin: '40px 0',
+    }}
+  ></div>
+);
 
 export default App;

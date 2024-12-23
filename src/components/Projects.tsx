@@ -8,22 +8,25 @@ const Project: React.FC = () => {
 
       {/* Add your resume download link */}
       <a
-        href="/Resume.pdf"
-        download
-        style={{
-          display: 'inline-block',
-          padding: '10px 20px',
-          backgroundColor: '#007bff',
-          color: '#fff',
-          textDecoration: 'none',
-          borderRadius: '5px',
-          fontSize: '16px',
-          fontWeight: 'bold',
-          cursor: 'pointer',
-        }}
-      >
-        Download My Resume
-      </a>
+  href="/resume.pdf"
+  download
+  style={{
+    display: 'inline-block',
+    padding: '10px 20px',
+    backgroundColor: '#007bff',
+    color: '#fff',
+    textDecoration: 'none',
+    borderRadius: '5px',
+    fontSize: '16px',
+    fontWeight: 'bold',
+    transition: 'transform 0.2s, background-color 0.3s',
+  }}
+  onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.1)')}
+  onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+>
+  Download My Resume
+</a>
+
     </div>
   );
 };
