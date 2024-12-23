@@ -6,7 +6,7 @@ const Project: React.FC = () => {
       <h1>My Projects</h1>
       <p>Here are some of my projects and a link to download my resume:</p>
 
-      {/* Add your resume download link */}
+   
       <a
   href="/resume.pdf"
   download
